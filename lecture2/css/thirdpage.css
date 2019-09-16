@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/IMG_7457-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+  
+    
+    width: 100%;
+    background: transparent;
+    overflow: auto;
+}
+ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+    
+}
+li{
+    float: right;
+}
+
+nav a{
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #f2f2f2;
+    text-align: center;
+}
+nav a:hover{
+    background: #797777;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+body{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.form{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+.container{
+    margin: 300 0 0 0;
+}

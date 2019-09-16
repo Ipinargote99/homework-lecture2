@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<title>Color</title> 
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/thirdpage.css"> 
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+
+<ul>
+
+<li><a href="thirdpage.html">NUMBER</a></li>
+<li><a href="secondpage.html">COLOR</a></li>
+<li><a href="index.html">HOME</a></li>
+</ul>   
+</nav>  
+<div class="container">
+<h1>Guess The Number</h1> 
+<p>Guess the correct number between 1-25, you have 5 guesses. Good luck!</p> 
+  
+<div class="form"> 
+    <label for="guessField">Enter a guess: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+  
+</div>
+</body> 
+<script>
+    
+  var answer= 19;
+    var guess = 1; 
+     
+   document.getElementById("submitguess").onclick = function(){ 
+          
+   var x = document.getElementById("guessField").value; 
+        
+   if(x == answer) 
+   {     
+       alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+               + guess + " GUESS "); 
+   } 
+        else if(guess ===5){
+            alert("Game Over!! the answer is 19");
+            setGameOver();
+        }
+       
+   else if(x > answer) 
+   {     
+       guess++; 
+       alert("OOPS SORRY!! TRY A SMALLER NUMBER"); 
+   } 
+   else
+   { 
+       guess++; 
+       alert("OOPS SORRY!! TRY A GREATER NUMBER") 
+   } 
+       
+    
+}     
+</script>
+
+</body>
+
+</html>
+    
